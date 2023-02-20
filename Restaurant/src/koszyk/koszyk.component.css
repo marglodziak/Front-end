@@ -1,0 +1,91 @@
+nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(36, 1, 1);
+    color: white;
+    text-align: right;
+}
+
+#naglowek{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#ogolnyPojemnik{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#koszykZawartosc{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: brown;    
+}
+
+.koszykDanie{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.danieZdjecie{
+    position: relative;
+    width: 20%;
+}
+
+.danieZdjecie img{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid brown;
+}
+
+.danieInfo{
+    width: 40%;
+    margin: 0 3%;
+}
+
+#podsuma{
+    text-align: right;
+}
+
+#modalZamowienie{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalTresc{
+    position: relative;
+    padding: 50px;
+    background-color: #a52a2a;
+    color: white;
+}
+
+#zamknijModal{
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    color: brown;
+    font-size: 40px;
+}
+
+#zamknijModal:hover{
+    cursor: pointer;
+    color: black;
+}

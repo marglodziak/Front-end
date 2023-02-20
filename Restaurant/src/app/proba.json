@@ -1,0 +1,159 @@
+{
+  "Zupa pomidorowa":
+  {
+    "nazwa": "Zupa pomidorowa",
+    "kuchnia": "polska",
+    "typ": "zupa",
+    "skladniki": ["pomidory", "mięso rosołowe", "marchewki", "woda", "przyprawy"],
+    "liczba": 30,
+    "cena":15,
+    "opis": "Zupa pomidorowa według tradycyjnego przepisu.",
+    "zdjecia": ["assets/zupa-pomidorowa_1.jpg", "assets/zupa-pomidorowa_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+
+  "Rosół":
+  {
+    "nazwa": "Rosół",
+    "kuchnia": "polska",
+    "typ": "zupa",
+    "skladniki": ["woda", "mięso rosołowe", "włoszczyzna", "przyprawy", "makaron"],
+    "liczba": 40,
+    "cena":17,
+    "opis": "Rosół jak w domu.",
+    "zdjecia": ["assets/rosol_1.jpg", "assets/rosol_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Żurek":
+  {
+    "nazwa": "Żurek",
+    "kuchnia": "polska",
+    "typ": "zupa",
+    "skladniki": ["woda", "kiełbasa", "zakwas", "przyprawy", "śmietana"],
+    "liczba": 20,
+    "cena":22,
+    "opis": "Żurek z jajkiem lub ziemniakami.",
+    "zdjecia": ["assets/zurek_1.jpg", "assets/zurek_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Zupa dyniowa":
+  {
+    "nazwa": "Zupa dyniowa",
+    "kuchnia": "francuska",
+    "typ": "zupa",
+    "skladniki": ["woda", "dynia", "przyprawy", "warzywa"],
+    "liczba": 3,
+    "cena":25,
+    "opis": "Krem z dyni z prażonymi orzechami, słonecznikiem i sezamem",
+    "zdjecia": ["assets/zupa-dyniowa_1.jpg", "assets/zupa-dyniowa_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Tiramisu":
+  {
+    "nazwa": "Tiramisu",
+    "kuchnia": "włoska",
+    "typ": "deser",
+    "skladniki": ["jajka", "mascarpone", "cukier", "biszkopty", "kakao"],
+    "liczba": 40,
+    "cena":10,
+    "opis": "Przepyszne tiramisu z posypką kakaową",
+    "zdjecia": ["assets/tiramisu_1.jpg", "assets/tiramisu_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Spaghetti bolognese":
+  {
+    "nazwa": "Spaghetti bolognese",
+    "kuchnia": "włoska",
+    "typ": "danie główne",
+    "skladniki": ["spaghetti", "pomidory", "czosnek", "oliwa z oliwek", "parmezan", "mięso mielone"],
+    "liczba": 15,
+    "cena":35,
+    "opis": "Włoskie spaghetti w najlepszym wydaniu",
+    "zdjecia": ["assets/spaghetti_1.jpg", "assets/spaghetti_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Lasagne":
+  {
+    "nazwa": "Lasagne",
+    "kuchnia": "włoska",
+    "typ": "danie główne",
+    "skladniki": ["makaron lasagne", "masło", "jogurt", "parmezan", "mięso mielone"],
+    "liczba": 25,
+    "cena":30,
+    "opis": "Makaron lasagne przekładany warstwami sosu pomidorowego z mięsem mielonym oraz beszamelu.",
+    "zdjecia": ["assets/lasagne_1.jpg", "assets/lasagne_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Sałatka ziemniaczana":
+  {
+    "nazwa": "Sałatka ziemniaczana",
+    "kuchnia": "niemiecka",
+    "typ": "sałatka",
+    "skladniki": ["ziemniaki", "ogórki kiszone", "cebula", "ocet", "przyprawy", "boczek"],
+    "liczba": 60,
+    "cena":12,
+    "opis": "Sałatka ziemniaczana w wersji po bawarsku. Doskonała jako przystawka lub dodatek do obiadu.",
+    "zdjecia": ["assets/salatka-ziemniaczana_1.jpg", "assets/salatka-ziemniaczana_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Placki ziemniaczane":
+  {
+    "nazwa": "Placki ziemniaczane",
+    "kuchnia": "międzynarodowa",
+    "typ": "danie główne",
+    "skladniki": ["ziemniaki", "cebula", "przyprawy", "jajka", "mąka"],
+    "liczba": 40,
+    "cena":18,
+    "opis": "Tradycyjne placki ziemniaczane - chrupiące i wspaniale pachnące.",
+    "zdjecia": ["assets/placki-ziemniaczane_1.jpg", "assets/placki-ziemniaczane_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Gulasz":
+  {
+    "nazwa": "Gulasz",
+    "kuchnia": "węgierska",
+    "typ": "danie główne",
+    "skladniki": ["łopatka wieprzowa", "boczek", "cebula", "papryka", "czosnek", "przyprawy", "pieczarki"],
+    "liczba": 40,
+    "cena":23,
+    "opis": "Smak Węgier na talerzu.",
+    "zdjecia": ["assets/gulasz_1.jpg", "assets/gulasz_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Fasolka po bretońsku":
+  {
+    "nazwa": "Fasolka po bretońsku",
+    "kuchnia": "międzynarodowa",
+    "typ": "zupa",
+    "skladniki": ["fasola", "woda", "boczek", "kiełbasa", "cebula", "czosnek", "pomidory", "przyprawy"],
+    "liczba": 40,
+    "cena":22,
+    "opis": "Sycąca fasolka po bretońsku według dawnego przepisu podawana z chlebem.",
+    "zdjecia": ["assets/fasolka_1.jpg", "assets/fasolka_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  },
+  "Tapas":
+  {
+    "nazwa": "Tapas",
+    "kuchnia": "hiszpańska",
+    "typ": "przekąska",
+    "skladniki": ["oliwki", "ser manchego", "chorizo", "jamon iberico"],
+    "liczba": 10,
+    "cena":40,
+    "opis": "Zestaw oryginalnych przekąsek z Półwyspu Iberyjskiego.",
+    "zdjecia": ["assets/tapas_1.jpg", "assets/tapas_2.jpg"],
+    "liczbaZamowionych": 0,
+    "ocena": -1
+  }  
+}

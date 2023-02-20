@@ -1,0 +1,78 @@
+h2{
+    font-size: 120%;
+}
+
+p{
+    margin: 10px 0;
+}
+
+button{
+   padding: 10px;
+   font-size: 20px;
+   margin: 10px;
+}
+
+.liczba{
+    padding: 20px;
+    margin: 0 20px;
+    line-height: 0.3;
+    font-size: 25px;
+}
+
+.usunDanie{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.usunDanie:hover{
+    background-color: #b80000;
+    cursor: pointer;
+}
+
+.danie-zdjecie{
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid brown;
+}
+
+.danie-pojemnik{
+    padding: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 5px white; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zawartosc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nazwaDania{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.zamowienie{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}

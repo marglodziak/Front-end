@@ -1,0 +1,47 @@
+<div id="filtryPojemnik">
+    <div id="filtryNaglowek"><h2>Filtry</h2></div>
+
+    <div id="filtry">
+        <div class="filtr">
+            <h4>Cena</h4>
+            <div class="filtrPojedynczy" id="ceny">
+                <div>{{((ceny.at(0) ?? 0) * przelicznik).toFixed(2)}}</div>
+                <div>{{((ceny.at(ceny.length/2) ?? 0) * przelicznik).toFixed(2)}}</div>
+                <div>{{((ceny.at(ceny.length-1) ?? 0) * przelicznik).toFixed(2)}}</div>
+            </div>
+            
+            <input type="range" name="" id="cenaSlider" min="1" max={{ceny.length}} (change)="FiltrujCene($event)">
+        </div>
+        
+        <div class="filtr">
+            <h4>Kuchnia</h4>
+            
+            <select name="" id="kuchnia" (change)="FiltrujKuchnie($event)">
+                <option value="wszystkie">wszystkie</option>
+                <option *ngFor="let kuchnia of kuchnie" value={{kuchnia}}>{{kuchnia}}</option>
+            </select>
+        </div>
+        
+        <div class="filtr">
+            <h4>Kategoria</h4>
+            
+            <select name="" id="kategoria" (change)="FiltrujKategorie($event)">
+                <option value="wszystkie">wszystkie</option>
+                <option *ngFor="let kategoria of kategorie" value={{kategoria}}>{{kategoria}}</option>
+            </select>
+        </div>
+        
+        <div class="filtr">
+            <h4>Ocena</h4>
+            <div id="oceny">
+                <div class="ocena"><input type="checkbox" name="jedynka" value="1" (change)="FiltrujOcene($event)"><label for="jedynka">1&starf;</label></div>
+                <div class="ocena"><input type="checkbox" name="dwojka" value="2" (change)="FiltrujOcene($event)"><label for="dwojka">2&starf;</label></div>
+                <div class="ocena"><input type="checkbox" name="trojka" value="3" (change)="FiltrujOcene($event)"><label for="trojka">3&starf;</label></div>
+                <div class="ocena"><input type="checkbox" name="czworka" value="4" (change)="FiltrujOcene($event)"><label for="czworka">4&starf;</label></div>
+                <div class="ocena"><input type="checkbox" name="piatka" value="5" (change)="FiltrujOcene($event)"><label for="piatka">5&starf;</label></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+

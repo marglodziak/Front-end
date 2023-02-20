@@ -1,0 +1,46 @@
+<div id="glownyPojemnik">
+    <nav>
+      <div id="opcje-waluty">
+        <button [disabled] = "USDNieaktywne" (click)="setCurrency('USD')" id="USD" disabled>USD</button>
+        <button [disabled] = "EURNieaktywne" (click)="setCurrency('EUR')"id="EUR">EUR</button>
+        <!-- [ngStyle]="{'background-color': sumaDan < 10 ? 'orange' : 'blue'}" -->
+        <div id="koszyk" >
+          <a routerLink="/koszyk" (click)="WyslijDania()">Do koszyka</a>
+        </div>
+        <div id="login">
+          <a routerLink="/logowanie">Zaloguj się</a>
+        </div>
+      </div>
+    </nav>  
+    
+    <div id="ogolny-pojemnik">    
+      <aside id="filtry">
+        <app-filtry
+          [przelicznik]="przelicznik"
+          (filtrEvent)="AktualizujFiltry($event)">  
+        </app-filtry>
+    
+      </aside>
+      <div id="dania-pojemnik" [ngStyle]="{'min-height': brakProduktow ? '10vh' : 'auto', 'background-color': brakProduktow ? '#ffffffcc' : 'unset'}">
+        <div *ngFor="let obiekt of odczytaneDania" class="danie">
+          <app-danie
+            [nazwa]="obiekt.nazwa"
+            [kuchnia]="obiekt.kuchnia"
+            [typ]="obiekt.typ"
+            [skladniki]="obiekt.skladniki"
+            [liczba]="obiekt.liczba"
+            [cena]="obiekt.cena"
+            [opis]="obiekt.opis"
+            [zdjecia]="obiekt.zdjecia"
+            [przelicznik]="przelicznik"
+            [waluta]="waluta"
+            [minCena]="minCena"
+            [maxCena]="maxCena"
+            [ocena]="obiekt.ocena"
+            (dodajDoKoszykaEvent)="ZwiekszLiczbeDan($event)"
+            (usunDanieEvent)="UsunDanie($event)"></app-danie>      
+        </div>
+        <div [ngStyle]="{'display': brakProduktow ? 'block' : 'none'}">Brak produktów, spełniających warunki wyszukiwania</div>
+      </div>    
+    </div>
+  </div>

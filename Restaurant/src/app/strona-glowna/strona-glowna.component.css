@@ -1,0 +1,63 @@
+#glownyPojemnik{
+    width: 100%;
+}
+
+a{
+    padding: 5px;
+    color:white;
+    text-decoration: none;
+
+}
+
+#login{
+    margin-right: 40px;
+}
+
+#opcje-waluty{
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(26, 0, 0);
+    color: white;
+    z-index: 10;
+    padding: 15px 0;
+    gap: 5px;
+}
+
+#koszyk{
+    margin: 0 40px;
+}
+
+#ogolny-pojemnik{
+    display: flex;
+    justify-content: right;
+    padding-top: 70px;
+    width: 100%;
+}
+
+#filtry{
+    width: 15%;
+    text-align: center;
+    position: fixed;
+    top: 60px;
+    left: 2vw;
+}
+
+#dania-pojemnik{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    background-color: #ffffffaa;
+    border-radius: 15px;
+}
+
+.danie{
+    width: 30%;
+}
+
+

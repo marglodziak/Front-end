@@ -1,0 +1,75 @@
+#filtryPojemnik{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filtryNaglowek{
+    border-bottom: 4px white solid;
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#filtry{
+    width: 80%;
+}
+
+.filtr{
+    padding-bottom: 30px;
+    border-bottom: 1px white solid;
+    color: white;
+}
+
+#ceny{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ceny div{
+    margin: 0 5px;
+    font-size: 10px;
+}
+
+#cenaSlider{
+    width: 100%;
+}
+
+/* #cenaSlider::-webkit-slider-runnable-track{
+    background-color: green;
+    background-color: white;
+} */
+
+#cenaSlider{
+    appearance: none;
+    outline: none;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#cenaSlider::-webkit-slider-thumb{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: orange;
+    border-radius: 50%;
+}
+
+#cenaSlider::-webkit-slider-runnable-track{
+    appearance: none;
+}
+
+#oceny{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ocena{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3px 0;
+}

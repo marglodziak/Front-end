@@ -1,0 +1,38 @@
+<nav>
+    <button><a routerLink="/dania">Powrót</a></button>
+</nav>
+<header id="naglowek">
+    Koszyk
+</header>
+<div id="ogolnyPojemnik"> 
+    <div id="koszykZawartosc">
+        <div class="koszykDanie" *ngFor="let danie of daniaWKoszyku">
+            <div class="danieZdjecie">
+                <img [src]="danie.zdjecia[0]" alt="" srcset="">
+            </div>
+            <div class="danieInfo">
+                {{danie.nazwa}}
+            </div>
+            <div class="danieCeny">
+                Cena: {{(danie.cena*danie.przelicznik).toFixed(2)}}{{danie.waluta}} <br/>
+                Liczba: {{danie.liczbaZamowionych}} <br/>
+                Suma: {{Zaokraglij(danie.cena, danie.przelicznik, danie.liczbaZamowionych).toFixed(2)}}{{danie.waluta}}
+            </div>
+            <button class="usunDanie" (click)="UsunDanie(danie.nazwa)"> X </button>
+        </div>
+        <div id="podsuma">
+            Suma łącznie: {{kosztCalkowity.toFixed(2)}}{{daniaWKoszyku.length > 0 ? daniaWKoszyku[0].waluta : ''}}
+        </div>
+    </div>
+    <div id="zamowienie">
+        <button [hidden]="kosztCalkowity == 0" (click)="ZlozZamowienie()">ZAMAWIAM</button>
+    </div>
+</div>
+
+<div id="modalZamowienie" [ngStyle]="{'display': ukryjModal ? 'none' : 'flex'}">
+    <div id="modalTresc">
+        Zamówienie złożono poprawnie!
+        <div id="zamknijModal" (click)="SchowajModal()">&cross;</div>
+    </div>
+    
+</div>

@@ -1,0 +1,22 @@
+<div class="danie-pojemnik"
+     [ngStyle]="{'background-color': liczba<3 ? '#a60202' : '#ffffffee',
+                 'border': cena == maxCena ? '4px green solid' : (cena==minCena ? '4px solid red' : 'none')}">
+
+    <button class="usunDanie" (click)="UsunDanie()"> X </button>
+    <img [src]="zdjecia[0]" class="danie-zdjecie"/>
+    <div class="zawartosc">
+        <h2 class="nazwaDania">{{nazwa | uppercase}}</h2>
+        <p>Ocena: {{ocena == -1 ? "brak danych" : ocena+'&starf;'}}</p>
+        <p>Kuchnia: {{kuchnia | uppercase}}</p>
+        <p class="dostepnaLiczba">Dostępna liczba: {{liczba}}</p>
+        <p>Cena: {{(cena*przelicznik).toFixed(2)}}{{waluta}}</p>
+        <div class="zamowienie">
+            <button [disabled]="zmniejszNieaktywny" class="liczba" (click)="DecreaseOrderNumber()">-</button>
+            <p>{{liczbaZamowionych}}</p>
+            <button [disabled]="zwiekszNieaktywny" class="liczba" (click)="IncreaseOrderNumber()">+</button>
+            
+        </div> 
+        <button (click)="DodajDoKoszyka()">Dodaj do koszyka</button>     
+    </div>   
+</div>
+
