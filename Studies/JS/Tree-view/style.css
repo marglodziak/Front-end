@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#treeWrapper{
+    width: 40%;
+}
+
+#separator{
+    width: 1vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#list{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+p{
+    width: 15%;
+    margin: 10px;
+}
+
+.treeUl{
+}
+
+.treeLi{
+    display: none;
+    margin-left: 10%;
+}
+
+.iconWrapper{
+    display: flex;
+}
+
+.iconDiv{
+    rotate: -90deg;
+}
+
+.checkbox{
+
+}

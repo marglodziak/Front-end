@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+}
+
+:root{
+    --glowny: #009c15;
+    --glownyPoNajechaniu: #00be37;
+    --kolorTekstu: aliceblue;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family:courier;
+}
+
+.wizytowkaWrapper{
+    position: relative;
+    z-index: 15;
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wizytowka{
+    position: absolute;
+    margin: 10px;
+    padding: 40px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0 0 30px gray;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.strzalka{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+#strzalkaPoprz{
+    justify-content: right;
+}
+
+#strzalkaNast{
+    justify-content: left;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 5px white solid;
+    box-shadow: 0 0 20px gray;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 15px gray;
+    background-color: var(--glowny);
+    color: var(--kolorTekstu);
+    padding: 45px 0;
+    margin: 0;
+}
+
+h4{
+    text-align: center;
+    color: var(--glowny);
+    font-size: 40px;
+    margin: 10px;
+}
+
+h5{
+    margin: 10px;
+    font-size: 30px;
+}
+
+p{
+    width: 80%;
+}
+
+.foto{
+    width: 30%;
+    height: auto;
+}
+
+.tekst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+button{
+    background-color: var(--glowny);
+    color: var(--kolorTekstu);
+    padding: 15px;
+    border: none;
+    box-shadow: 0 0 15px gray;
+    font-size: 25px;
+}
+
+button:hover{
+    background-color: var(--glownyPoNajechaniu);
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="tarcza">
+            <div id="niebieski">
+                <div id="czerwony">
+                    <div id="zolty"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="counter">0</div>
+        <button id="reset">RESETUJ</button>
+        <button id="propagation">PROPAGACJA AKTYWNA</button>  
+        <div id="bubbleOptions">
+            <div class="set">
+                <input type="radio" name="order" id="1-2-3" value="123">
+                <label for="1-2-3">Wywołanie 1-2-5</label>  
+            </div>
+            <div class="set">
+                <input type="radio" name="order" id="1-3-2" value="132">
+                <label for="1-3-2">Wywołanie 1-5-2</label>  
+            </div>
+            <div class="set">
+                <input type="radio" name="order" id="2-3-1" value="231">
+                <label for="2-3-1">Wywołanie 2-5-1</label>
+            </div>
+            <div class="set">
+                <input type="radio" name="order" id="3-2-1" value="321" checked>
+                <label for="3-2-1">Wywołanie 5-2-1</label>     
+            </div>         
+        </div>      
+
+        <button id="start">Ustaw kolejność</button>
+    </div>
+
+    <div id="logs">
+        <h3>LOGI</h3>
+    </div>
+    
+    
+</body>
+</html>

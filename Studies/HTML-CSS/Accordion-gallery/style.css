@@ -1,0 +1,25 @@
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.item{
+    overflow-x:hidden;
+    overflow-y:visible;
+    width:100%; 
+    transition: width .5s;
+    display:flex;
+    justify-content: center;
+}
+
+.item:hover{
+    width: 180%;
+}
+
+.item-img{
+    height:80vh;
+    width:auto;  
+}
+

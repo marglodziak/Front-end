@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tarcza{
+    border: 2px solid gray;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#niebieski, #czerwony, #zolty
+{
+    border-radius: 100%;
+}
+
+#niebieski:hover, #czerwony:hover, #zolty:hover{
+    cursor: pointer;
+}
+
+#niebieski
+{
+    background-color: rgb(28, 0, 128);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#czerwony
+{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#zolty
+{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+#logs{
+    width: 40vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#counter{
+    font-size: 40px;
+    padding: 15px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+#propagation, #reset{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#bubbleOptions{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px;
+    line-height: 1.5;
+    font-size: 25px;
+    text-align: center;
+}
+
+#start{
+    font-size: 25px;
+    background-color: #008000;
+    color: whitesmoke;
+    padding: 15px;
+    margin: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+#start:hover{
+    background-color: #00a000;
+    cursor:pointer;
+}
+
+p{
+    padding: 0;
+    margin: 8px;
+}
+

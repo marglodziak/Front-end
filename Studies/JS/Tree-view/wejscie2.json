@@ -1,0 +1,10 @@
+{
+  "Produkty":
+    {
+      "samochody": ["Chevrolet", "Audi", "Land Rover", "Porsche", "Jeep", "Renault", "Seat"],
+      "rowery": ["Merida", "Cannondale", "Trek", "Author", "Kross", "Canyon"],
+      "mąki": ["orkiszowa", "pszenna razowa", "jęczmienna", "kokosowa", "gryczana"],
+      "oleje": ["olej słonecznikowy", "olej lniany", "olej z pestek winogron"],
+      "warzywa": ["burak", "brokuł", "marchewka", "pietruszka", "seler"]
+    }
+}

@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #aaa;
+}
+
+div{
+    margin: 15px;
+    padding: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    box-shadow: 3px 3px 15px black;
+    width: 60%;
+    background-color: #f9e8d6;
+    border-radius: 15px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasło</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <div id="passwordWrapper">
+            <label for="password">Podaj hasło</label>
+            <div class="setter">
+                <input type="password" id="password">
+                <i class="icon-eye" id="i1"></i>
+            </div>           
+
+            <label for="repeat">Powtórz hasło</label>
+            <div class="setter">
+                <input type="password" id="repeat">
+                <i class="icon-eye" id="i2"></i>
+            </div>
+
+            <p id="errorMessage"></p>
+            <div id="results">
+                <div class="result length"></div>
+                <div class="result chars"></div>
+                <div class="result capital"></div>
+                <div class="result digits"></div>
+            </div>      
+            <button class="btn" id="resetBtn">Resetuj hasło</button>
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,177 @@
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 1px #aaa;
+    margin: 5% 0;
+    transition: all .5s ease-in-out;
+}
+
+.front{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+.reverse{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 166, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card:hover .front{
+    transform: rotateY(180deg);
+    visibility: hidden;
+    opacity: 1;
+}
+
+.card:hover .reverse{
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-part{
+    background-image: url("img/image-2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+}
+
+.image-overlay{
+    width:100%;
+    height:300px;
+    background-color: rgba(255, 166, 0, 0.5);
+    position: absolute;
+}
+
+.image-description p{
+ 
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.image-description{
+    position: absolute;
+    bottom: 10px;
+    right: 1vw;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-description.first, .image-overlay.first{
+    background-color: rgba(150, 20, 20, 0.8);
+}
+
+.image-description.second, .image-overlay.second{
+    background-color: rgba(143, 133, 0, 0.8);
+}
+
+.image-description.third, .image-overlay.third{
+    background-color: rgba(10, 163, 5, 0.8);
+}
+
+.reverse.first{
+    background-color: rgba(150, 20, 20);
+}
+
+.reverse.second{
+    background-color: rgba(143, 133, 0);
+}
+
+.reverse.third{
+    background-color: rgba(10, 163, 5);
+}
+
+.image-clip{
+    width:100%;
+    height:60px;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+.card h3{
+    color: gray;
+    font-family:"Arial";
+    text-align: center;
+}
+
+.card h1{
+    color: aliceblue;
+    font-family:"Arial";
+    text-align: center;
+    font-size: 2em;
+}
+
+.reserve{
+    width: 50%;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.separator{
+    width: 80%;
+    min-height: 2px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 15px;
+}
+
+@media (max-width:1600px) {
+    .card{
+        width: 45%;
+    }    
+}
+
+@media (max-width:1200px) {
+    .card p{
+        font-size: 1em;
+    }    
+}
+
+@media (max-width:800px) {
+    .card{
+        width: 95%;
+    }    
+}

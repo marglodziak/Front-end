@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-section{
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#wyjdz{
+    position: fixed;
+    top: 100px;
+    right: 200px;
+    color: white;
+    font-size: 50px;
+}
+
+#trescModala{
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+h2{
+    width: 60%;
+}
+
+p{
+    text-align: justify;
+    width: 70%;
+}
+
+#wyjdz:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+button{
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+#gallery{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item{
+    width: 40%;
+    transition: 0.1s ease-in-out;
+}
+
+.item img{
+    width: 90%;
+    height: auto;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}

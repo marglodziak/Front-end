@@ -1,0 +1,10 @@
+{
+  "Produkty":
+    {
+      "samochody": ["Fiat", "BMW", "Mercedes", "Chrysler", "Audi", "Renault", "Opel", "Seat"],
+      "rowery": ["Merida", "Scott", "Kellys", "Pinarello", "Canyon"],
+      "mąki": ["żytnia", "pszenna tortowa", "migdałowa", "kokosowa", "owsiana"],
+      "oleje": ["oliwa z oliwek", "olej rzepakowy", "olej z czarnuszki", "tran"],
+      "warzywa": ["ogórek", "papryka", "por", "sałata", "kapusta"]
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraje świata</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="countries_data.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="naglowek">
+        <h2>Kraje świata - statystyki</h2>
+        <p>Jak dotąd zbiór obejmuje 250 państw.</p>
+    </header>
+    <section>
+        <div id="kategorie">
+            <div id="przyciskiKategorie">
+                <button class='kategoria' id="maxJezyk">Najbardziej popularne języki</button>
+                <button class='kategoria' id="minJezyk">Najmniej popularne języki</button>
+                <button class='kategoria' id="waluta">Najpopularniejsze waluty</button>
+            </div>
+            <div id="wyniki">
+                <div id="wybranaKategoria"></div>
+                <div id="obliczoneWyniki"></div>
+            </div>
+        </div>        
+    </section>   
+</body>
+</html>
